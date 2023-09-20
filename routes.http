@@ -27,3 +27,17 @@ Content-Type: application/json
 {
   "prompt": "3 dicas para melhorar seu código Typescript, +Bônus"
 }
+
+
+###
+
+# @name generate-ai-completion
+
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "d45cb4d1-db4b-4ec6-bec2-537bf323c21e",
+  "temperature": 0.5,
+  "template": "Gere um resumo sucinto da transcrição do video informado a seguir: '''{transcription}'''"
+}
